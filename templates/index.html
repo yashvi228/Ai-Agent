@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        // Lock down marked options a bit
+        marked.setOptions({mangle: false, headerIds: false, breaks: true});
+    </script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div>My AI Chat</div>
+            <button id="resetBtn" class="reset">Refresh</button>
+        </header>
+        <main id="chat" class="chat"></main>
+        <form id="form" class="composer">
+            <textarea id="input" rows="2" placeholder="Type a Prompt Here"></textarea>
+            <button id="sendBtn" type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
+
