@@ -1,4 +1,4 @@
-# Chatbot (Flask + DeepSeek)
+# Chatbot (Flask + OpenAI)
 
 ## Quickstart
 
